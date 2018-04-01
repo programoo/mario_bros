@@ -9,9 +9,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.programoo.mariobros.screens.PlayScreen;
 
 public class MarioBros extends Game {
-	 public SpriteBatch batch;
-	Texture img;
-	
+	public static final int V_WIDTH = 400;
+	public static final int V_HEIGHT = 208;
+
+	public SpriteBatch batch;
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
@@ -26,6 +28,5 @@ public class MarioBros extends Game {
 	@Override
 	public void dispose () {
 		batch.dispose();
-		img.dispose();
 	}
 }
